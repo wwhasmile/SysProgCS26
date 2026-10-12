@@ -5,7 +5,10 @@ class Program
     static void Main(string[] args)
     {
         if (args.Length != 1)
-        Console.WriteLine("An input text should be passed in");
+        {
+            Console.WriteLine("An input text should be passed in");
+            return;
+        }
         Lexer lexer = new Lexer(args[0]);
         while (true)
         {
